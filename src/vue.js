@@ -1,19 +1,7 @@
 module.exports = {
-  overrides: [
-    {
-      files: ['*.vue'],
-      parser: 'vue-eslint-parser',
-      parserOptions: { parser: '@typescript-eslint/parser' },
-      rules: {
-        'no-unused-vars': 'off',
-        'no-undef': 'off',
-        '@typescript-eslint/no-unused-vars': 'off',
-      },
-    },
-  ],
   extends: [
-    'plugin:vue/vue3-recommended',
-    './typescript.js',
+    'plugin:vue/base',
+    './basic.js'
   ],
   rules: {
     'vue/max-attributes-per-line': 'off',
@@ -26,7 +14,7 @@ module.exports = {
     // reactivity transform
     'vue/no-setup-props-destructure': 'off',
 
-    'vue/component-tags-order': ['error', { order: ['script', 'template', 'style'] }],
+    'vue/component-tags-order': ['error', { order: ['template', 'script', 'style'] }],
     'vue/block-tag-newline': [
       'error', {
         singleline: 'always',
@@ -87,5 +75,5 @@ module.exports = {
     'vue/space-infix-ops': 'error',
     'vue/space-unary-ops': ['error', { words: true, nonwords: false }],
     'vue/template-curly-spacing': 'error',
-  },
+  }
 }

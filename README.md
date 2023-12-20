@@ -8,8 +8,10 @@ npm install --save-dev @chetuoche/eslint-config
 yarn add @chetuoche/eslint-config -D
 ```
 
-2. Run
-
-```sh
-npx cl
+2. 使用
+.eslintrc
+```json
+{
+  "extends": "@chetuoche"
+}
 ```
