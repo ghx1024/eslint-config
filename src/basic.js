@@ -27,7 +27,7 @@ module.exports = {
     'vue',
   ],
   rules: {
-    'no-console': 2,
+    'no-console': 1,
     'max-len': ['error', {
       code: 150,
     }],
@@ -35,7 +35,12 @@ module.exports = {
     'no-param-reassign': 0,
     'camelcase': 0,
     'prefer-destructuring': 0,
-    'func-names': 0
+    'func-names': 0,
+    'no-tabs': 0,
+    'consistent-return': 0,
+    'import/order': 0,
+    'import/prefer-default-export': 0,
+    'eqeqeq':['warn','smart']
   },
   settings: {
     'import/resolver': {

@@ -41,7 +41,7 @@ module.exports = {
     'vue/comma-style': ['error', 'last'],
     'vue/dot-location': ['error', 'property'],
     'vue/dot-notation': ['error', { allowKeywords: true }],
-    'vue/eqeqeq': ['error', 'smart'],
+    'vue/eqeqeq': ['warn', 'smart'],
     // 'vue/func-call-spacing': ['off', 'never'],
     'vue/key-spacing': ['error', { beforeColon: false, afterColon: true }],
     'vue/keyword-spacing': ['error', { before: true, after: true }],
